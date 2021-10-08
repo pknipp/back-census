@@ -43,4 +43,4 @@ def census():
     response = requests.get(url = URL, params = PARAMS)
     data = response.json()
     # print("len(data) = ", len(data))
-    return {"data": data}
+    return {"data": len(data)}
