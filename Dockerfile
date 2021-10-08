@@ -14,4 +14,4 @@ ENV FLASK_ENV=production
 EXPOSE 8000
 
 # Run flask environment
-CMD gunicorn no_db:app
+CMD gunicorn back_census:app
