@@ -8,7 +8,7 @@ RUN ["pip", "install", "-r", "requirements.txt"]
 # RUN ["pip", "install", "psycopg2"]
 
 # Setup Flask environment
-ENV FLASK_APP=no_db
+ENV FLASK_APP=back_census
 ENV FLASK_ENV=production
 
 EXPOSE 8000
