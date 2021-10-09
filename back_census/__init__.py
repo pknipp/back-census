@@ -42,5 +42,4 @@ def census():
     PARAMS = {"get": ["NAME", "POP"], "for": {"place": "*"}, "key": CENSUS_KEY}
     response = requests.get(url = URL, params = PARAMS)
     data = response.json()
-    # print("len(data) = ", len(data))
-    return {"data": len(data)}
+    return {"data": data}
