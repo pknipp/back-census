@@ -40,6 +40,4 @@ def census():
     CENSUS_KEY = os.environ.get('CENSUS_KEY')
     URL = 'https://api.census.gov/data/2019/pep/population'
     PARAMS = {"get": "NAME,POP", "for": {"place": "*"}, "key": CENSUS_KEY}
-    response = requests.get(url = URL, params = PARAMS)
-    data = response.json()
-    return {"data": data}
+    return {"data": requests.get(url = URL, params = PARAMS).json()}
